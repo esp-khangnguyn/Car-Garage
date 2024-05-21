@@ -18,12 +18,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="title">DOANH THU</h1>
-    <div class="container col-sm-12 col-xs-12 ">
+    <p class="title">DOANH THU</p>
+    <div class="table-wrapper">
         <div class="container-heading">
           <form method="POST" action="page1.php">
-            <div class="d-flex flex-row justify-content-between col-sm-12 col-xs-12 mb-1">
-                <div class="d-flex flex-row col-sm-3 col-xs-3">
+            <div class="d-flex flex-row  w-100 ">
+                <div class="d-flex flex-row ">
                     <select name="month" class="form-select" id="Month" required>
                     <option value="">Tháng</option>
                         <option value="1">1</option>
@@ -44,8 +44,9 @@
                          <option value="2021">2021</option>
                          <option value="2022">2022</option>
                          <option value="2023">2023</option>
+                         <option value="2024">2024</option>
                       </select>
-                      <button name="display" type="submit" class="btn btn-primary"> 
+                      <button name="display" type="submit" class="btn btn-primary btn-submit"> 
                         Xem 
                      </button>
                 </div>
@@ -56,14 +57,14 @@
           </form>  
         </div>
         
-        <table class="table table-responsive table-striped table-hover ">
+        <table class="content-wrapper table table-responsive table-striped table-hover ">
             <thead>
                 <tr>
-                    <th class="col-1 text-center">#</th>
+                    <th class="col-1 text-center" style="border-top-left-radius: 12px;">#</th>
                     <th class="col-3 text-center">Hiệu xe</th>
                     <th class="col-2 text-center">Số lượt sửa</th>
                     <th class="col-2 text-center">Doanh thu</th>
-                    <th class="col-2 text-center">Tỷ lệ</th>
+                    <th class="col-2 text-center" style="border-top-right-radius: 12px;">Tỷ lệ</th>
                 </tr>
             </thead>
             <tbody>

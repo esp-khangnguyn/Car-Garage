@@ -6,8 +6,8 @@
 body {
   display: flex;
   flex-direction: column;
-  thead{
-    background-color: #6B728E;
+  thead {
+    background-color: #6b728e;
     color: white;
   }
 }
@@ -16,13 +16,13 @@ h1 {
   text-align: center;
 }
 
-.addS{
+.addS {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.turnBack{
+.turnBack {
   position: relative;
   right: 320px;
   bottom: 5px;
@@ -30,9 +30,9 @@ h1 {
   font-size: 35px;
   color: white;
   cursor: pointer;
-  i{
-    transition: .2s;
-    &:hover{
+  i {
+    transition: 0.2s;
+    &:hover {
       transform: scale(1.1);
       transform: translateX(-5px);
     }
@@ -42,65 +42,64 @@ h1 {
 .title {
   text-align: center;
   color: white;
-  background-color: #467C8EFA;
+  background-color: #467c8efa;
   font-weight: 700;
 }
 
 .container {
-    position: relative;
-    
-    .search{
-        border: none;
-        &:hover{
-            background-color: green;
-        }
+  position: relative;
+
+  .search {
+    border: none;
+    &:hover {
+      background-color: green;
     }
-    .container-heading{
+  }
+  .container-heading {
+    .searchMore {
+      box-sizing: content-box;
       display: flex;
       flex-direction: column;
-      .searchMore{
-        box-sizing: content-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .searchEle{
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          select, input{
-            width:100%;
-            height: 30px;
-            margin-right: 10px;
-            box-sizing: border-box;            
-          }
-        }
-        button{
-          width: 15%;
-        }
-      }
-      .hidden {
-        display: none;
-      }
-    }
-    .total {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      p {
-        font-size: 30px;
-        position: relative;
-        b {
-          color: red;
+      align-items: center;
+      .searchEle {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        select,
+        input {
+          width: 100%;
+          height: 30px;
+          margin-right: 10px;
+          box-sizing: border-box;
         }
       }
-      button{       
-        width: 150px;
-        height: 50px;
+      button {
+        width: 15%;
       }
     }
+    .hidden {
+      display: none;
+    }
+  }
+  .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 30px;
+      position: relative;
+      b {
+        color: red;
+      }
+    }
+    button {
+      width: 150px;
+      height: 50px;
+    }
+  }
 }
 
 .add-form-root {
@@ -123,8 +122,9 @@ h1 {
     }
   }
   .add-form {
-    background-color: #dddcdc;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    background-color: #ffff;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
     width: 60%;
     i {
       position: relative;
@@ -141,7 +141,8 @@ h1 {
   }
 }
 
-.detail-root, .detail1-root {
+.detail-root,
+.detail1-root {
   width: 100%;
   //background-color: rgba(193, 210, 245, 0.62);
   position: absolute;
@@ -161,10 +162,11 @@ h1 {
       color: red;
     }
   }
-  .detail, .detail1 {
+  .detail,
+  .detail1 {
     width: 70%;
     background-color: #dddcdc;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
     table {
       th,
       td {
@@ -175,7 +177,8 @@ h1 {
       }
     }
   }
-  .supplies, .cost {
+  .supplies,
+  .cost {
     position: relative;
     top: 10px;
     h3 {
@@ -187,7 +190,7 @@ h1 {
     }
   }
   .total {
-    td{
+    td {
       p {
         font-size: 15px;
         color: black;
@@ -206,7 +209,7 @@ h1 {
         color: red;
       }
     }
-    button{
+    button {
       position: relative;
       transform: translateX(-50%);
       left: 50%;
@@ -217,7 +220,7 @@ h1 {
   }
 }
 
-.history-supplies-root{
+.history-supplies-root {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -225,43 +228,45 @@ h1 {
   // background-color:rgba(193, 210, 245, 0.62) ;
   justify-content: center;
   align-items: center;
-  .cancel{
-  position: absolute;
-  font-size: 40px;
-  display: flex;
-  justify-content: end;
-  left: 10px;
-  transition: .1s;
-    &:hover{
-    color: red;
+  .cancel {
+    position: absolute;
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    left: 10px;
+    transition: 0.1s;
+    &:hover {
+      color: red;
     }
   }
-  .history-supplies{
+  .history-supplies {
     background-color: lightgrey;
     width: 75%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
-    th, td {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+    th,
+    td {
       border: 1px solid black;
     }
     tbody {
       background-color: white;
     }
-    i{
+    i {
       position: relative;
       right: 15px;
     }
-    button{
-      i{
+    button {
+      i {
         right: 0px;
       }
     }
-    .form-control{
+    .form-control {
       border: none;
     }
   }
 }
 
-.supplies-form-root, .cost-form-root {
+.supplies-form-root,
+.cost-form-root {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -273,7 +278,7 @@ h1 {
   .supplies-form {
     width: 80%;
     background-color: #dddcdc;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
     border: 1px solid black;
 
     display: flex;
@@ -300,7 +305,7 @@ h1 {
         color: red;
       }
     }
-    button{       
+    button {
       width: 150px;
       height: 50px;
     }
@@ -319,7 +324,7 @@ h1 {
   .pay {
     width: 65%;
     background-color: #dddcdc;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
     border: 1px solid black;
     table {
       background-color: lightpink;
@@ -355,14 +360,13 @@ h1 {
           color: red;
         }
       }
-      button{       
+      button {
         width: 150px;
         height: 50px;
       }
     }
   }
 }
-
 
 .hidden {
   display: none;

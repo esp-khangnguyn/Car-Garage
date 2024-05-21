@@ -34,17 +34,17 @@
          });
       </script>
       <h1 class="title" >TRA CỨU</h1>
-      <div class="container">
+      <div class="ticket-container">
          <div class="container-heading">
 
             <!-- TÌM KIẾM NÂNG CAO -->
             <div class="searchMore mb-3">
                <form class="searchMore" method="POST" action="">
                   <div class="searchEle">
-                     <input type="date" placeholder="Ngày tiếp nhận" name="date">
-                     <input type="text" placeholder="Biển số" name="licensePlate">
-                     <select name="carBrand" class="carBrand">
-                        <option value="">-- Hiệu xe --</option>
+                     <input type="date" placeholder="Ngày tiếp nhận" name="date" class="search-input ">
+                     <input type="text" placeholder="Biển số" name="licensePlate"  class="search-input ">
+                     <select name="carBrand" class="carBrand search-input">
+                        <option value="" class="search-input">-- Hiệu xe --</option>
                         <?php 
                            $sel_carBrand="SELECT * FROM hieuxe";
                            $recordset=mysqli_query($conn,$sel_carBrand);
@@ -55,10 +55,10 @@
                            }
                         ?>
                      </select>
-                     <input type="text" placeholder="Tên chủ xe" name="name">
-                     <input type="text" placeholder="Địa chỉ" name="address">
-                     <input  type="text" placeholder="Số điện thoại" name="phone">
-                     <select name="selDebt" style="margin-right: 0px;">
+                     <input type="text" placeholder="Tên chủ xe" name="name"  class="search-input ">
+                     <input type="text" placeholder="Địa chỉ" name="address" class="search-input ">
+                     <input  type="text" placeholder="Số điện thoại" name="phone" class="search-input ">
+                     <select name="selDebt" style="margin-right: 0px;" class="search-input ">
                         <option value="">-- Tiền nợ --</option>
                         <option value="0|500">Dưới 500$</option>
                         <option value="500|1000">500$ - 1000$</option>
@@ -66,7 +66,8 @@
                         <option value="2000|100000000000000">Trên 2000$</option>
                      </select>
                   </div>
-                  <button name="search" class="btn btn-sm btn-success search mt-2 ">
+
+                  <button name="search" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button ">
                      Tìm kiếm
                      <i class="fa fa-search"></i>
                   </button>
@@ -75,14 +76,14 @@
          </div>
 
          <!-- THÔNG TIN TIẾP NHẬN XE -->
-         <table class="table table-responsive table-striped table-hover ">
+         <table class="table table-responsive  table-hover ">
             <thead>
                <tr>
-               <th class="col-1 text-center">STT</th>
+               <th class="col-1 text-center" style="border-top-left-radius: 12px;">STT</th>
                <th class="col-2 text-center">Thông tin xe</th>
                <th class="col-4 text-center">Thông tin chủ xe</th>
                <th class="col-2 text-center">Tiền nợ</th>
-               <th class="col-4 text-center"></th>
+               <th class="col-4 text-center" style="border-top-right-radius: 12px;"></th>
                </tr>
             </thead>
             <tbody style="cursor: pointer;" >

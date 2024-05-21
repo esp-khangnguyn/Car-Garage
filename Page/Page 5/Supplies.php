@@ -16,12 +16,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="title">QUẢN LÍ VẬT TƯ VÀ PHỤ TÙNG</h1>
-    <div class="container">
+    <h1 class="title">Quản lý vật tư và phụ tùng</h1>
+    <div class="ticket-container">
         <div class="container-heading">
             <form method="POST" action="Supplies.php">
                 <div class="col-sm-12 col-xs-12">
-                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Staff()">
+                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Staff()">
                         <i class="fa fa-plus-circle"></i> 
                         THÊM MỚI
                     </a>      
@@ -32,12 +32,12 @@
                 <input type="text" name="ValueSearch" id="search" class="fa-pull-right" placeholder="Tìm kiếm">
             </form>
         </div>
-        <table class="table table-responsive table-striped ">
+        <table class="table table-responsive  ">
             <thead>
                 <tr>
-                    <th class="col-1 text-center">#</th>
+                    <th class="col-1 text-center" style="border-top-left-radius: 12px;" >#</th>
                     <th class="col-4 text-center">Tên vật tư và phụ tùng </th>
-                    <th class="col-1"></th>
+                    <th class="col-1" style="border-top-right-radius: 12px;"></th>
                 </tr>
             </thead>
             <tbody>

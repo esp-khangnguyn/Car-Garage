@@ -1,6 +1,7 @@
 <div class="menu">
         <img src="logo.png" alt="logo-img">
-        <nav class="vstack">
+
+        <nav class="vstack navbar-nav">
             <button class="ele selector-1 onChose" onclick="viewPage1()">
                 <i class="fa-solid fa-house"></i>
                 <p>Thống kê & báo cáo</p>

@@ -8,6 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./page4.css">
+      <!-- <link rel="stylesheet" href="../Page 2/page2.css"> -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
       <link rel="stylesheet" href="../fontawsome/css/all.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +17,12 @@
       <title>Document</title>
    </head>
    <body>
-      <h1 class="title">QUẢN LÍ NHÂN VIÊN</h1>
-      <div class="container">
+      <h1 class="title">Quản lý nhân viên</h1>
+      <div class="ticket-container">
          <div class="container-heading">
             <form method="POST" action="page4.php">
                <div class="col-sm-12 col-xs-12">
-                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Staff()">
+                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Staff()">
                   <i class="fa fa-plus-circle"></i> 
                   THÊM MỚI
                   </a>      
@@ -32,14 +33,14 @@
                </div>
             </form>
          </div>
-         <table class="table table-responsive table-striped ">
+         <table class="table table-responsive table-hover  ">
             <thead>
                <tr>
-                  <th>#</th>
-                  <th class="col-3">Tên nhân viên</th>
+                  <th style="border-top-left-radius: 12px;">#</th>
+                  <th class="col-3" >Tên nhân viên</th>
                   <th class="col-4">Thông tin</th>
                   <th class="col-2">Quyền hạn</th>
-                  <th class="col-2"></th>
+                  <th class="col-2" style="border-top-right-radius: 12px;"></th>
                </tr>
             </thead>
             <tbody>

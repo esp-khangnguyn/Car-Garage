@@ -136,21 +136,25 @@
                ?>
             </tbody>
             </table>
-           <div class="total">
-               <?php
-                  if (mysqli_num_rows(mysqli_query($conn,"SELECT * FROM ct_phieusuachua"))){
-                     $queryTonga = mysqli_query($conn,"SELECT TienNo FROM xe WHERE BienSo='$getID'");
-                     $getTonga = mysqli_fetch_row($queryTonga);
-                     $resTonga = $getTonga[0]; // MaVTPT
-                     echo "<p>Còn nợ:  <b style='color: red;'>".$resTonga."</b>   $</p>";
-                  }
-               ?>
-              <input name="money" type="number" min="1" step="any" class="form-control w-50 mb-2" id="Money" placeholder="Số tiền thanh toán" required>
-              <button name="click_new" type="submit" class="btn btn-success mt-1" onclick=""> 
-                 THANH TOÁN
-              </button>
-              
-           </div>
+            <?php
+               if (mysqli_num_rows(mysqli_query($conn,"SELECT * FROM ct_phieusuachua"))){
+                   $queryTonga = mysqli_query($conn,"SELECT TienNo FROM xe WHERE BienSo='$getID'");
+                   $getTonga = mysqli_fetch_row($queryTonga);
+                   $resTonga = $getTonga[0]; // MaVTPT
+            
+               }
+            ?>
+            <?php if ($resTonga <= 0) : ?>
+
+            <?php else: ?>
+               <div class="total">
+                  <p>Còn nợ:  <b style='color: red;'><?=$resTonga?></b>$</p>
+                  <input name="money" type="number" min="1" step="any" class="form-control w-50 mb-2" id="Money" placeholder="Số tiền thanh toán" required>
+                  <button name="click_new" type="submit" class="btn btn-success mt-1" onclick=""> 
+                     THANH TOÁN
+                  </button>
+               </div>
+            <?php endif ?>
         </div>
       </form>
    </div>

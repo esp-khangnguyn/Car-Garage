@@ -1,3 +1,5 @@
+@import url("../../index.scss");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,12 +10,12 @@ h1 {
   text-align: center;
 }
 
-.title {
+/* .title {
   text-align: center;
   color: white;
   background-color: rgba(70, 124, 142, 0.9803921569);
   font-weight: 700;
-}
+} */
 
 .container {
   position: relative;
@@ -30,11 +32,13 @@ body {
   flex-direction: column;
 }
 body thead {
-  background-color: #6B728E;
+  background-color: #6b728e;
   color: white;
 }
 
-.add-supplies-root, .history-supplies-root, .info-root {
+.add-supplies-root,
+.history-supplies-root,
+.info-root {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -42,7 +46,9 @@ body thead {
   justify-content: center;
   align-items: center;
 }
-.add-supplies-root .cancel, .history-supplies-root .cancel, .info-root .cancel {
+.add-supplies-root .cancel,
+.history-supplies-root .cancel,
+.info-root .cancel {
   position: absolute;
   font-size: 40px;
   display: flex;
@@ -50,40 +56,139 @@ body thead {
   left: 10px;
   transition: 0.1s;
 }
-.add-supplies-root .cancel:hover, .history-supplies-root .cancel:hover, .info-root .cancel:hover {
+.add-supplies-root .cancel:hover,
+.history-supplies-root .cancel:hover,
+.info-root .cancel:hover {
   color: red;
 }
-.add-supplies-root .add-supplies, .add-supplies-root .history-supplies, .add-supplies-root .info, .history-supplies-root .add-supplies, .history-supplies-root .history-supplies, .history-supplies-root .info, .info-root .add-supplies, .info-root .history-supplies, .info-root .info {
-  background-color: lightgrey;
+.add-supplies-root .add-supplies,
+.add-supplies-root .history-supplies,
+.add-supplies-root .info,
+.history-supplies-root .add-supplies,
+.history-supplies-root .history-supplies,
+.history-supplies-root .info,
+.info-root .add-supplies,
+.info-root .history-supplies,
+.info-root .info {
+  background-color: #ffff;
+  border-radius: 12px;
   width: 60%;
+  border: 1px solid black;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
 }
 .add-supplies-root .add-supplies th,
-.add-supplies-root .add-supplies td, .add-supplies-root .history-supplies th,
-.add-supplies-root .history-supplies td, .add-supplies-root .info th,
-.add-supplies-root .info td, .history-supplies-root .add-supplies th,
-.history-supplies-root .add-supplies td, .history-supplies-root .history-supplies th,
-.history-supplies-root .history-supplies td, .history-supplies-root .info th,
-.history-supplies-root .info td, .info-root .add-supplies th,
-.info-root .add-supplies td, .info-root .history-supplies th,
-.info-root .history-supplies td, .info-root .info th,
+.add-supplies-root .add-supplies td,
+.add-supplies-root .history-supplies th,
+.add-supplies-root .history-supplies td,
+.add-supplies-root .info th,
+.add-supplies-root .info td,
+.history-supplies-root .add-supplies th,
+.history-supplies-root .add-supplies td,
+.history-supplies-root .history-supplies th,
+.history-supplies-root .history-supplies td,
+.history-supplies-root .info th,
+.history-supplies-root .info td,
+.info-root .add-supplies th,
+.info-root .add-supplies td,
+.info-root .history-supplies th,
+.info-root .history-supplies td,
+.info-root .info th,
 .info-root .info td {
   border: 1px solid black;
 }
-.add-supplies-root .add-supplies tbody, .add-supplies-root .history-supplies tbody, .add-supplies-root .info tbody, .history-supplies-root .add-supplies tbody, .history-supplies-root .history-supplies tbody, .history-supplies-root .info tbody, .info-root .add-supplies tbody, .info-root .history-supplies tbody, .info-root .info tbody {
+.add-supplies-root .add-supplies tbody,
+.add-supplies-root .history-supplies tbody,
+.add-supplies-root .info tbody,
+.history-supplies-root .add-supplies tbody,
+.history-supplies-root .history-supplies tbody,
+.history-supplies-root .info tbody,
+.info-root .add-supplies tbody,
+.info-root .history-supplies tbody,
+.info-root .info tbody {
   background-color: white;
 }
-.add-supplies-root .add-supplies i, .add-supplies-root .history-supplies i, .add-supplies-root .info i, .history-supplies-root .add-supplies i, .history-supplies-root .history-supplies i, .history-supplies-root .info i, .info-root .add-supplies i, .info-root .history-supplies i, .info-root .info i {
+.add-supplies-root .add-supplies i,
+.add-supplies-root .history-supplies i,
+.add-supplies-root .info i,
+.history-supplies-root .add-supplies i,
+.history-supplies-root .history-supplies i,
+.history-supplies-root .info i,
+.info-root .add-supplies i,
+.info-root .history-supplies i,
+.info-root .info i {
   position: relative;
   right: 15px;
 }
-.add-supplies-root .add-supplies button i, .add-supplies-root .history-supplies button i, .add-supplies-root .info button i, .history-supplies-root .add-supplies button i, .history-supplies-root .history-supplies button i, .history-supplies-root .info button i, .info-root .add-supplies button i, .info-root .history-supplies button i, .info-root .info button i {
+.add-supplies-root .add-supplies button i,
+.add-supplies-root .history-supplies button i,
+.add-supplies-root .info button i,
+.history-supplies-root .add-supplies button i,
+.history-supplies-root .history-supplies button i,
+.history-supplies-root .info button i,
+.info-root .add-supplies button i,
+.info-root .history-supplies button i,
+.info-root .info button i {
   right: 0px;
 }
-.add-supplies-root .add-supplies .form-control, .add-supplies-root .history-supplies .form-control, .add-supplies-root .info .form-control, .history-supplies-root .add-supplies .form-control, .history-supplies-root .history-supplies .form-control, .history-supplies-root .info .form-control, .info-root .add-supplies .form-control, .info-root .history-supplies .form-control, .info-root .info .form-control {
+.add-supplies-root .add-supplies .form-control,
+.add-supplies-root .history-supplies .form-control,
+.add-supplies-root .info .form-control,
+.history-supplies-root .add-supplies .form-control,
+.history-supplies-root .history-supplies .form-control,
+.history-supplies-root .info .form-control,
+.info-root .add-supplies .form-control,
+.info-root .history-supplies .form-control,
+.info-root .info .form-control {
   border: none;
 }
 
 .hidden {
   display: none;
-}/*# sourceMappingURL=page3.css.map */
+} /*# sourceMappingURL=page3.css.map */
+
+.title {
+  text-align: start;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 24px;
+  border-bottom: 1px solid #e7e9eb;
+  padding: 16px;
+}
+
+.ticket-container {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.ticket-button {
+  background-color: #ffff !important;
+  color: var(--main-color) !important;
+  font-weight: 700;
+  padding: 10px !important;
+}
+
+.ticket-button:hover {
+  color: #ffff !important;
+  background-color: var(--main-color) !important;
+}
+
+.search-input {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 8px;
+  padding: 8px;
+  height: 42px;
+  width: 164px;
+}
+
+.searchEle {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.table th {
+  background-color: var(--main-color) !important;
+  color: #ffff;
+}

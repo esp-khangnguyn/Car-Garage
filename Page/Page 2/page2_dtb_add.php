@@ -34,7 +34,9 @@
         } else{
             $sl_kh="SELECT * FROM khachhang";
             $rec_row_kh=mysqli_num_rows(mysqli_query($conn,$sl_kh));
+            echo $rec_row_kh;
             $rec_row_kh++;
+            
 
             $sl_psc="SELECT * FROM phieusuachua";
             $rec_row_psc=mysqli_num_rows(mysqli_query($conn,$sl_psc));

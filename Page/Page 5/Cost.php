@@ -16,12 +16,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="title">QUẢN LÍ TIỀN CÔNG</h1>
-    <div class="container">
+    <h1 class="title">Quản lý tiền công </h1>
+    <div class="ticket-container">
         <div class="container-heading">
             <form method="POST" action="Cost.php">
                 <div class="col-sm-12 col-xs-12">
-                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Staff()">
+                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Staff()">
                         <i class="fa fa-plus-circle"></i> 
                         THÊM MỚI
                     </a>      

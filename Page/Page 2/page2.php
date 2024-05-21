@@ -17,7 +17,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <title>Document</title>
    </head>
-   <body>
+   <body class="tab-body">
       <script>
          $(document).ready(function() {
             $('.history').click(function(){
@@ -34,18 +34,18 @@
             });
          });
       </script>
-      <h1 class="title" >PHIẾU TIẾP NHẬN XE</h1>
-      <div class="container">
+      <h1 class="title" >Phiếu tiếp nhận xe</h1>
+      <div class="ticket-container">
          <div class="container-heading">
             <form method="POST" action="page2.php">
                <div class="col-sm-12 col-xs-12">
-                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Add()">
+                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Add()">
                      <i class="fa fa-plus-circle"></i>  
-                     LẬP PHIẾU TIẾP NHẬN XE MỚI
+                     LẬP PHIẾU
                   </a>      
                   
                   <!-- BUTTON LỊCH SỬ TIẾP NHẬN -->
-                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="History()">
+                  <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="History()">
                      <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
                      LỊCH SỬ TIẾP NHẬN XE
                   </a>
@@ -56,14 +56,14 @@
                </div>
             </form>
          </div>
-         <table class="table table-responsive table-striped table-hover ">
+         <table class="table table-responsive table-hover ">
             <thead>
                <tr>
-                  <th class="col-1 text-center">STT</th>
+                  <th class="col-1 text-center" style="border-top-left-radius: 12px;">STT</th>
                   <th class="col-3 text-center">Ngày tiếp nhận</th>
                   <th class="col-3 text-center">Thông tin xe</th>
                   <th class="col-5 text-center">Thông tin chủ xe</th>
-                  <th class="col-1 text-center"></th>
+                  <th class="col-1 text-center" style="border-top-right-radius: 12px;"></th>
                </tr>
             </thead>
             <tbody style="cursor: pointer;" >
@@ -157,7 +157,7 @@
                         </select>
                      </div>
                      <div class="form-group mb-3 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary" name="add-new" onclick="">
+                        <button type="submit" class="btn btn-primary" name="add-new" onclick="ValidateForm()">
                         <i class="fa fa-plus-circle mr-1"></i> 
                         Thêm mới 
                         </button>
@@ -191,6 +191,7 @@
                   <option value="">Năm</option>
                   <option value="2022">2022</option>
                   <option value="2023">2023</option>
+                  <option value="2024">2024</option>
                </select>
                <button name="display" type="submit" class="btn btn-primary history"> 
                   Xem 

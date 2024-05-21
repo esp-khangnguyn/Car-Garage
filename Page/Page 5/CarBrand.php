@@ -17,12 +17,12 @@
 </head>
 <body>
     <div id="#detail_data"></div>
-    <h1 class="title">QUẢN LÍ HIỆU XE</h1>
-    <div class="container">
+    <h1 class="title">Quản lý hiệu xe </h1>
+    <div class="ticket-container">
         <div class="container-heading">
             <form method="POST" action="CarBrand.php">
                 <div class="col-sm-12 col-xs-12">
-                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Staff()">
+                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Staff()">
                         <i class="fa fa-plus-circle"></i> 
                         THÊM MỚI
                     </a>      
@@ -33,12 +33,12 @@
                 </div>
             </form>
         </div>
-        <table class="table table-responsive table-striped">
+        <table class="table table-responsive ">
             <thead>
                 <tr>
-                    <th class="col-1 text-center">#</th>
+                    <th class="col-1 text-center" style="border-top-left-radius: 12px;">#</th>
                     <th class="col-9 text-center">Tên hiệu xe</th>
-                    <th class="col-2"></th>
+                    <th class="col-2" style="border-top-right-radius: 12px;"></th>
                 </tr>
             </thead>
             <tbody>

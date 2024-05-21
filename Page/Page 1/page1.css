@@ -1,3 +1,5 @@
+@import url("../../index.scss");
+
 * {
   margin: 0px;
   padding: 0xp;
@@ -15,23 +17,58 @@ body .search:hover {
   background-color: green;
 }
 
+th {
+  background-color: var(--main-color) !important;
+  color: #ffff;
+}
+
+.form-select {
+  width: 180px !important;
+  margin-right: 20px;
+}
+
 .title {
-  text-align: center;
-  color: white;
-  background-color: rgba(70, 124, 142, 0.9803921569);
+  text-align: start;
+  color: var(--main-color);
   font-weight: 700;
+  font-size: 24px;
+  border-bottom: 1px solid #e7e9eb;
+  padding: 16px;
+}
+
+.table {
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.col-1 {
+  border-top-left-radius: 12px;
 }
 
 .container {
   position: relative;
 }
 .container thead {
-  background-color: #6B728E;
+  background-color: #6b728e;
   color: white;
+}
+
+.container-heading {
+  margin-bottom: 20px;
 }
 
 h1 {
   text-align: center;
+}
+
+button.btn-submit {
+  width: 120px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .staff-root {
@@ -162,4 +199,4 @@ h1 {
 
 .hidden {
   display: none;
-}/*# sourceMappingURL=page1.css.map */
+} /*# sourceMappingURL=page1.css.map */

@@ -20,8 +20,8 @@
       <title>Document</title>
    </head>
    <body>
-      <h1 class="title" >SỬA CHỮA</h1>
-      <div class="container">
+      <h1 class="title" >Sửa chữa</h1>
+      <div class="ticket-container">
          <div class="container-heading">
             <form method="POST" action="repair.php">
                <div class="col-sm-12 col-xs-12">               
@@ -35,15 +35,15 @@
          </div>
 
          <!-- THÔNG TIN TIẾP NHẬN XE -->
-         <table class="table table-responsive table-striped table-hover ">
+         <table class="table table-responsive table-hover ">
             <thead>
                <tr>
-               <th class=" text-center">STT</th>
+               <th class=" text-center" style="border-top-left-radius: 12px;">STT</th>
                <th class="col-2 text-center">Ngày tiếp nhận</th>
                <th class="col-2 text-center">Thông tin xe</th>
                <th class="col-4 text-center">Thông tin chủ xe</th>
                <th class="col-2 text-center"></th>
-               <th class="col-4 text-center"></th>
+               <th class="col-4 text-center" style="border-top-right-radius: 12px;"></th>
                </tr>
             </thead>
             <tbody style="cursor: pointer;" >
@@ -83,7 +83,7 @@
                      <td class="col-4 text-center">
                         <ul class="action-list " style="list-style: none; font-size:15px;">
                            <li class="d-inline-block"><a href="./detail_repair.php?id=<?php echo $rowData['BienSo'];?>" class="btn btn-primary"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-                           <li class="d-inline-block"><a href="#" class="btn btn-danger" onclick=""><i class="fa fa-times"></i></a></li>
+                           <!-- <li class="d-inline-block"><a href="#" class="btn btn-danger" onclick=""><i class="fa fa-times"></i></a></li> -->
                         </ul>
                      </td>
                   </tr>  

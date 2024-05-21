@@ -16,12 +16,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="title">QUẢN LÍ NHÀ CUNG CẤP</h1>
-    <div class="container">
+    <h1 class="title">Quản lý nhà cung cấp</h1>
+    <div class="ticket-container">
         <div class="container-heading">
             <form method="POST" action="Supplier.php">
                 <div class="col-sm-12 col-xs-12">
-                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1" onclick="Staff()">
+                    <a href="#" class="btn btn-sm btn-primary fa-pull-left mb-1 ticket-button" onclick="Staff()">
                         <i class="fa fa-plus-circle"></i> 
                         THÊM MỚI
                     </a>      
@@ -32,13 +32,13 @@
                 </div>
             </form>
         </div>
-        <table class="table table-responsive table-striped">
+        <table class="table table-responsive ">
             <thead>
                 <tr>
-                    <th class="col-1 text-center">#</th>
+                    <th class="col-1 text-center" style="border-top-left-radius: 12px;">#</th>
                     <th class="col-5 text-center">Tên nhà cung cấp</th>
                     <th class="col-2 text-center">Số điện thoại</th>
-                    <th class="col-2 text-center">Email</th>
+                    <th class="col-2 text-center" tyle="border-top-right-radius: 12px;">Email</th>
                     <th class="col-1"></th>
                 </tr>
             </thead>

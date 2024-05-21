@@ -1,3 +1,5 @@
+@import url("../../index.scss");
+
 * {
   margin: 0px;
   padding: 0xp;
@@ -15,18 +17,11 @@ body .search:hover {
   background-color: green;
 }
 
-.title {
-  text-align: center;
-  color: white;
-  background-color: rgba(70, 124, 142, 0.9803921569);
-  font-weight: 700;
-}
-
 .container {
   position: relative;
 }
 .container thead {
-  background-color: #6B728E;
+  background-color: #6b728e;
   color: white;
 }
 
@@ -54,7 +49,7 @@ h1 {
   color: red;
 }
 .staff-root .staff {
-  background-color: #dddcdc;
+  background-color: #ffff;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
   width: 60%;
 }
@@ -77,4 +72,51 @@ h1 {
 
 .hidden {
   display: none;
-}/*# sourceMappingURL=page5.css.map */
+} /*# sourceMappingURL=page5.css.map */
+
+.title {
+  text-align: start;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 24px;
+  border-bottom: 1px solid #e7e9eb;
+  padding: 16px;
+}
+
+.ticket-button {
+  background-color: #ffff !important;
+  color: var(--main-color) !important;
+  font-weight: 700;
+  padding: 10px !important;
+}
+
+.ticket-container {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.ticket-button:hover {
+  color: #ffff !important;
+  background-color: var(--main-color) !important;
+}
+
+.search-input {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 8px;
+  padding: 8px;
+  height: 42px;
+  width: 164px;
+}
+
+.searchEle {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.table th {
+  background-color: var(--main-color) !important;
+  color: #ffff;
+}
