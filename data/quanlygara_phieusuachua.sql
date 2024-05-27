@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: quanlygara
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.32-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `phieusuachua`
+--
+
+DROP TABLE IF EXISTS `phieusuachua`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `phieusuachua` (
+  `SoPhieuSC` int(100) NOT NULL,
+  `BienSo` varchar(100) NOT NULL,
+  `NgaySuaChua` date NOT NULL,
+  PRIMARY KEY (`SoPhieuSC`),
+  KEY `FK_PSUACHUA_XE` (`BienSo`),
+  CONSTRAINT `FK_PSUACHUA_XE` FOREIGN KEY (`BienSo`) REFERENCES `xe` (`BienSo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_nopad_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `phieusuachua`
+--
+
+LOCK TABLES `phieusuachua` WRITE;
+/*!40000 ALTER TABLE `phieusuachua` DISABLE KEYS */;
+INSERT INTO `phieusuachua` VALUES (1,'72-H0','0000-00-00'),(2,'68T1 - 650.55','0000-00-00'),(3,'68T1 - 650.51','2024-05-21'),(4,'68T1 - 650.555555','0000-00-00'),(5,'68T1 - 650.522','0000-00-00'),(6,'72T1 - 654.11','2024-05-27'),(7,'68T1 - 625.22','2024-05-27'),(8,'68T1 - 650.56','2024-05-27');
+/*!40000 ALTER TABLE `phieusuachua` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-05-27 21:51:04
