@@ -130,7 +130,6 @@
                         <ul class="action-list " style="list-style: none; font-size:15px;">
                            <li class="d-inline-block" onclick="Pay()"><a href="payment.php?id=<?php echo $rowData['BienSo']?>" class="btn btn-primary"><i class="fa-solid fa-money-check-dollar"></i></a></li>
                            <li class="d-inline-block " onclick="History()"><button value=<?php echo $rowData['BienSo']?> class="btn btn-primary history"><i class="fa-sharp fa-solid fa-clock-rotate-left" ></i></button></li>
-                           <li class="d-inline-block"><a href="#" class="btn btn-danger" onclick=""><i class="fa fa-times"></i></a></li>
                         </ul>
                      </td>
                   </tr>      

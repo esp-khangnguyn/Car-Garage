@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/IBM+Plex+Sans?query=bold&subset=vietnamese&noto.script=Latn">
     <title>CNPM</title>
 </head>
-<body>
+<body style="background-image: url(BG.jpg);">
     <div class="wrapper">
         <form class="login-form" method="POST" action="check_login.php">
             <div class="log-title">

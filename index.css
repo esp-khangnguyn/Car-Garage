@@ -203,7 +203,9 @@ body {
   padding-bottom: 0px;
   z-index: 10000;
   bottom: 0px;
-
+  background-color: #ffff;
+  border-radius: 12px;
+  border: 1px solid #000;
   width: 350px;
 }
 .page .settingSCR p {
