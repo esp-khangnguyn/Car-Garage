@@ -1,18 +1,24 @@
+
 <?php
+    
+   
     require '../../login-form/connect.php'; 
     session_start();
     if (isset($_POST['add-new'])) {
+        echo "<script type='text/javascript'>alert('lala');</script>";
         $employeeName = $_POST['employeeName'];
         $cccd = $_POST['CCCD'];
         $phoneNumber = $_POST['phoneNumber'];
         $address = $_POST['address'];
         $workDate = $_POST['workDate'];
         $permission = $_POST['permission'];
+  
 
         $query = mysqli_query($conn,"SELECT * FROM permission WHERE PERMISSION_NAME = '$permission'");
         $getPerID = mysqli_fetch_row($query);
         $resPerID = $getPerID[0];
         $res = (int)$resPerID;
+
 
         $sl_info="SELECT * FROM user_info";
         $rec_row_info=mysqli_num_rows(mysqli_query($conn,$sl_info));

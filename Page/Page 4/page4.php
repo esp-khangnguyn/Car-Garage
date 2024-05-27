@@ -119,6 +119,13 @@
                         <input type="date" class="form-control" id="Date" name="workDate"
                            placeholder="Ngày vào làm" required>
                      </div>
+                     <div class="form-group mb-3 d-flex align-items-center justify-content-center">
+                        <select name="permission" style="width: 96%;margin-left: 10px;" class="form-select col-3 permission" id="Permission" >
+                           <option value="">Năm</option>
+                           <option value="admin">Admin</option>
+                           <option value="Nhân viên">Nhân viên</option>
+                        </select>
+                     </div>
                      <div class="form-group mb-3 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary" name="add-new">
                         <i class="fa fa-plus-circle mr-1"></i> 

@@ -74,7 +74,7 @@
                      $sel_cus = "SELECT * FROM ((SELECT HieuXe,DiaChi,DienThoai,TenKH,BienSo,NgayTiepNhan,day(NgayTiepNhan) as dday from phieutiepnhan) b INNER JOIN (SELECT BienSo,max(day(NgayTiepNhan)) as maxDay FROM phieutiepnhan GROUP BY BienSo) a on a.BienSo = b.BienSo AND a.maxDay = b.dday) WHERE (a.BienSo LIKE '%$valueSearch%' OR  TenKH LIKE '%$valueSearch%' OR HieuXe LIKE '%$valueSearch%' OR DiaChi LIKE '%$valueSearch%' OR DienThoai LIKE '%$valueSearch%')";
                   }
                   else{
-                     $sel_cus="SELECT * FROM ((SELECT HieuXe,DiaChi,DienThoai,TenKH,BienSo,NgayTiepNhan,day(NgayTiepNhan) as dday from phieutiepnhan) b INNER JOIN (SELECT BienSo,max(day(NgayTiepNhan)) as maxDay FROM phieutiepnhan GROUP BY BienSo) a on a.BienSo = b.BienSo AND a.maxDay = b.dday)";
+                     $sel_cus="SELECT * FROM ((SELECT HieuXe,DiaChi,DienThoai,TenKH,BienSo,NgayTiepNhan,day(NgayTiepNhan) as dday from phieutiepnhan) b INNER JOIN (SELECT BienSo,max(day(NgayTiepNhan)) as maxDay FROM phieutiepnhan GROUP BY BienSo) a on a.BienSo = b.BienSo AND a.maxDay = b.dday)  ORDER BY NgayTiepNhan DESC";
                   }
                   $recordset=mysqli_query($conn,$sel_cus);
                   $i=0;

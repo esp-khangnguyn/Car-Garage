@@ -49,9 +49,11 @@ body .search:hover {
   color: red;
 }
 .staff-root .staff {
-  background-color: #dddcdc;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  background-color: #ffff;
+  border-radius: 12px;
   width: 60%;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
 }
 .staff-root .staff i {
   position: relative;
